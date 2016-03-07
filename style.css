@@ -94,6 +94,12 @@
 /*
 Matt's Rules
 ---------------------------------------------------------------------------------------------------- */
+.home-featured select#regions,
+.home-featured select#categories, 
+.home-featured input#searchsubmit {
+	display:inline-block;
+	margin:0 5px 10px;
+}
 
 /* General
 --------------------------------------------- */
@@ -124,7 +130,7 @@ Matt's Rules
  
  h2.title-white {  	
   	font-size: 33px;
-  	font-weight: 500;
+  	font-weight: 300;
 }
 
 .title-white h4 {
@@ -245,11 +251,6 @@ header.entry-header {
 
 /* Navigation
 --------------------------------------------- */
-/*.genesis-nav-menu > li.menu-item-has-children:hover > a, .genesis-nav-menu a:hover, 
-.genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: rgb(116, 165, 52) !important;
-}*/
-
 
 
 /* Widgets
@@ -286,16 +287,17 @@ header.entry-header {
 /* Region Widget
 --------------------------------------------- */
 .region-widget {
-	/*margin-top:80px;*/
+	display:table;
+	margin:0 auto;
 }
 
 .frame {
-  	float: left;
   	height: 250px;
  	overflow: hidden;
   	position: relative;
   	width: 300px;
-  	margin: 0 10px 20px 10px;
+  	margin: 0 5px;
+  	display:inline-block;
 }
 
 .frame a {
@@ -1859,19 +1861,7 @@ Content Area
 	background-color: rgba(0, 0, 0, 0.15);
 	padding: 40px;
 	margin: 0 auto;
-	max-width: 75%;
-}
-
-.home-featured .widget:last-child {
-	margin-bottom: 200px;
-}
-
-.home-featured .widget.property-search,
-.home-featured .widget.property-search:last-child {
-	/*margin: 30px 0 100px 0;
-	padding: 30px 20px;
-	max-width: 100%;
-	*/
+	text-align:center;
 }
 
 .home-featured .widget.property-search .widget-title {
@@ -2686,14 +2676,7 @@ Media Queries
 		padding-top: 160px;
 	}
 
-	.home-featured .widget:last-child {
-		margin-bottom: 160px;
-	}
 
-	.home-featured .widget.property-search,
-	.home-featured .widget.property-search:last-child {
-		/*margin-top: 160px;*/
-	}
 
 }
 
